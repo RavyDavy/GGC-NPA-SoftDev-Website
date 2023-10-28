@@ -18,6 +18,7 @@ body	{
 a {
     color: #000000;
     text-decoration: none;
+    background-color: #46cc0c;
 }
 
 a:hover {
@@ -316,6 +317,111 @@ a:hover {
 
 #drinksdesserts {
     width: 45%;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    margin: 20px;
+}
+
+#contentbackground4	{
+    width: 60%;
+    background-image: url("../images/background-05.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-color: #2E4922;
+    border: 1px solid #000000;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#shopproduceinfo {
+    width: 45%;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    margin: 20px;
+}
+
+#fruitandveg {
+    width: 45%;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    margin: 20px;
+}
+
+#freshproduce {
+    width: 45%;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    margin: 20px;
+}
+
+#butchery {
+    width: 45%;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* All of the above code is for the cafe and the shop pages */
+/* All of the below code is for the faq & contact us page */
+
+#contentbackground5	{
+    width: 60%;
+    background-image: url("../images/background-06.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-color: #2E4922;
+    border: 1px solid #000000;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#faqs {
+    width: 90%;
+    background-color: #ffffff;
+    border:1px solid #000000;
+    border-radius: 100px;
+    font-size: 18px;
+    text-align: left;
+    padding: 50px;
+    margin: 20px;
+}
+
+#map {
+    width: 90%;
     background-color: #ffffff;
     border:1px solid #000000;
     border-radius: 100px;
