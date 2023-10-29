@@ -29,6 +29,31 @@
                 <a href="faqcontact.html" title="Any FAQs, and our Contact Details">|  FAQs/Contact Us  |</a>
             </div>
         </div>
+        <!-- This next "link" will be a Search Bar, which will use Google as its search engine and only search "our" site.
+                The code/instuctions were found on: https://pagedart.com/blog/how-to-add-a-search-bar-in-html/ for reference in future -->
+        <div class="searchbutton">
+            <form id="form" role="search">
+            <input type="search" id="query" name="q" placeholder="Search Site..." aria-label="Search through site content">
+            <button>Go!</button>
+            </form>
+            <script>
+                const f = document.getElementById('form');
+                const q = document.getElementById('query');
+                const google = 'https://www.google.com/search?q=site%3A+';
+                const site = 'www.ravydavy.co.uk/GGC-NPA-SoftDev-Website/';
+                          
+                function submitted(event) {
+                    event.preventDefault();
+                    const url = google+site + '+' + q.value;
+                    const win = window.open(url, '_blank');
+                    win.focus();
+                    }
+                          
+                f.addEventListener('submit', submitted);
+                </script>
+        </div>
+        <!-- End of Search Bar Code -->
+
         <br><br>
         <div id="contentbackground5">
             <!--  This will contain the 2nd background image, and will house all the content tiles.  -->
@@ -46,45 +71,18 @@
                         <li><b>Where is Abington Farm Visitor Centre?</b> - We are located just outside Abington, Biggar. You can get to us by taking the M74, and coming off at Abington Services. See the Map below for our exact location.</li>
                         <br><li><b>Is there parking?</b> - We have a main car park and an overflow car park. We also have Parking for Disabled Driver.</li>
                         <br><li><b>Do you accept dogs?</b> - No, with the exception of assistance dogs. All assistance dogs should wear their respective identifying jackets. The nearby Abington Kennels do offer a day service for owners that wish to visit Abington Farm. Day Fee is £10.00 per animal. For more information visit their Site, or phone them on 01864 502 503.</li>
-<!--
-                        <br><li><b>What age group do you cater for?</b> - Mabie Farm Park is suitable for all age groups. It is a fully interactive fun experience with sight, sound and smells of the countryside. We also cater for Playgroups, School groups, Birthday Parties and specialist groups – the possibilities are endless! If you are unsure about the suitability for a group visit please give us a ring. Please note: children under 16 years of age must be accompanied by an adult of 16 years old or above.</li>
-                        <br><li><b>How long will a visit last?</b> - Our visitors usually remain with us for at least two hours, but most spend the whole dayin the Park. There is seating throughout the Farm Park for those who want to rest.</li>
-                        <br><li><b>Is there a shop?</b> - Our Farm Shop stocks a range of gifts and toys as well as ice cream, drinks, crisps and sweets. The gifts range from pocket money items to big ride-on toys.</li>
-                        <br><li><b>Is it safe and suitable for people with disabilities?</b> - Hazard & Risk Assessments have been carried out. Mabie Farm Park features disabled access throughout the park, but visitors should be aware that some pathways are grassed over. For people with mobility problems, please ask about using our Golf Buggies.</li>
-                        <br><li><b>What if it rains?</b> - There is an Indoor Playbarn with a range of indoor activities. Please see the Attractions/Indoor Fun page for more details.</li>
-                        <br><li><b>How do we book and pay?</b> - You can book in advance by contacting us on +44 (0)1387 259666 or by e-mail office@mabiefarmpark.co.uk and letting us know your group size, date, time of arrival. See Tariffpage for more information.</li>
-                        <br><li><b>You can adjust group numbers after booking your group visit and your coach driver is entitled to free admission to the park.</b> - Payments can be made on arrival by cash, cheque or by most major credit/debit cards.</li>
-                        <br><li><b>Seasonal Event booking</b> - </li>
-                        <br><li><b>What is there to do at Clyde Valley Family Park</b> - </li>
-                        <br><li><b>How much are tickets? What is the Price/Cost?</b> - </li>
-                        <br><li><b>Do you need a ticket for a baby? Under 2?</b> - </li>
-                        <br><li><b>Can I buy Memberships/Annual Passes?</b> - </li>
-                        <br><li><b>What are your opening times?</b> - </li>
-                        <br><li><b>Do you need to book? Can you pay at the door?</b> - </li>
-                        <br><li><b>What animals do you have?</b> - </li>
-                        <br><li><b>Can you feed the animals?</b> - </li>
-                        <br><li><b>Do you have a cafe?</b> - </li>
-                        <br><li><b>Can you bring a picnic?</b> - </li>
-                        <br><li><b>How much is parking?</b> - </li>
-                        <br><li><b>Do you allow dogs?</b> - </li>
-                        <br><li><b>Can children visit without an adult?</b> - </li>
-                        <br><li><b>What age group is Clyde Valley Family Park best for?</b> - </li>
-                        <br><li><b>How often does the train go?</b> - </li>
-                        <br><li><b>How long does it take to visit Clyde Valley Family Park?</b> - </li>
-                        <br><li><b>Do you sell gift vouchers?</b> - </li>
-                        <br><li><b>Do you have a discount for NHS, Blue light card, or SPRA members?</b> - </li>
-                        <br><li><b>Can I change my ticket date?</b> - </li>
-                        <br><li><b>Do you do birthday parties?</b> - </li>
-                        <br><li><b>Is the park wheelchair friendly? Accessibility</b> - </li>
-                        <br><li><b>How much is the train?</b> - </li>
-                        <br><li><b>Can you bring a buggy?</b> - </li>
-                        <br><li><b>Can you pay with card/cash?</b> - </li>
-                        <br><li><b>Do you have Events? Christmas/Halloween/Easter</b> - </li>
-                        <br><li><b>How to get here? Directions? Public transport? Taxi's?</b> - </li>
-                        <br><li><b>What shoes should you wear? Footwear?</b> - </li>
-                        <br><li><b>How to buy Concession/Carer/OAP/Disabled tickets?</b> - </li>
-                        <br><li><b>Christmas 2022</b> - </li>
--->                        
+                        <br><li><b>What age group do you cater for?</b> - Abington Farm is suitable for all age groups. It is a fully interactive fun experience with sight, sound and smells of the countryside. We also cater for Playgroups, School groups, Birthday Parties and specialist groups – the possibilities are endless! If you are unsure about the suitability for a group visit please give us a ring. Please note: children under 16 years of age must be accompanied by an adult of 16 years old or above.</li>
+                        <br><li><b>How long will a visit last?</b> - Our farm will suit anyone, from those stopping for a coffee & a cake, through to those here for the entire day. However, our visitors usually remain with us for at least two hours.</li>
+                        <br><li><b>Is it safe and suitable for people with disabilities?</b> - Hazard & Risk Assessments have been carried out. Abington Farm  features disabled access throughout the park, but visitors should be aware that some pathways are grassed over. For people with mobility problems, please ask about using our Golf Buggies.</li>
+                        <br><li><b>What if it rains?</b> - There is an indoor section to the Petting Zoo, within a large barn. Please see the Activities page for more details.</li>
+                        <br><li><b>How do we book and pay?</b> - We only require advanced bookings if your group size is over 10, and payment is only for the petting zoo. Our adventure playpark and forest trails are free to use. For Seasonal Activites, see the relevant article page.</li>
+                        <br><li><b>What animals do you have?</b> - Sheep, Goats, Pigs, Highland Cows, Deer, Donkeys, Horses, Chickens, Ducks, Turkeys, Rhea, Peacocks, Guinea Pigs, Rabbits, Wallabies AND our very cheeky Llamas! </li>
+                        <br><li><b>Can you feed the animals?</b> - Yes! Our animals are very friendly and will come up to meet you for a snack and a head scratch! Animal food costs 50p per cup, and is suitable for all our large animals. Animals can only be fed with the animal feed provided on the farm. Food which is not part of their normal diet can cause upset tummies and even be dangerous to animals. Do not bring your own food for the animals.</li>
+                        <br><li><b>Can you bring a picnic?</b> - Yes! Picnics are welcome. There are plenty of picnic benches too, both indoors and indoors.</li>
+                        <br><li><b>What age group is Abington Farm best for?</b> - All ages! Our activities are best suited to kids between ages 2 - 12, however we also get many children younger and older than this who tell us they've had a brilliant time. Everything in the farm is designed to be enjoyed by adults too, so that children can experience playing and learning with their parents!</li>
+                        <br><li><b>Can you bring a buggy?</b> - Yes you can bring buggy's to the farm. You are also able to pop in and out to the car park if wish to put your buggy away. </li>
+                        <br><li><b>Can you pay with card/cash?</b> - The reception, shop and cafe all accept both card and cash.</li>
+                        <br><li><b>What shoes should you wear? Footwear?</b> - The park is paved and gravel paths so any trainers or boots are fine. Perhaps wellies for wet day for any puddles! We would NOT recommend heels, sandals, dress shoes, or any footwear or clothing that you would like to keep nice.</li>
                     </ul>
                 </p>
                 <br><br>
@@ -92,49 +90,11 @@
                 
             </div>
 
-            <div id="map">
+            <div class="map">
                 <!-- Map Info -->
-                <div class="photos">
-                    
-                </div>
                 <h3>Map Info</h3>
-                <p>
-                   Google map here.
-                    <br><br>
-                </p>
-                <br><br>
-                
-                
-            </div>
-
-           <!--
-            <div id="cafeinfo">
-                
-                <div class="photos">
-                    <img src="images/sandwich.jpg" alt="Sandwich on a Plate" width="400" class="roundedimages">
-                </div>
-                <h3>Cafe</h3>
-                <p>
-                    All the ingredients on our cafe menu are from either from our own farm, or sourced locally from the community. We can guarantee that everything is fresh, tasty, with no additives, preservatives, or anything artifial.
-                    <br>Just home grown good food.
-                    <br><br><u><a href="cafe.html" title="Click to view our Menu">Check out our Menu here.</a></u>
-                </p>
-            </div>
-            <div id="farmshopinfo">
-                
-                <div class="photos">
-                    <img src="images/Local-Honey.jpg" alt="Local Honey from our Neighbours" width="400" class="roundedimages">
-                </div>
-                <h3>Farm Shop</h3>
-                <p>
-                    One of the things we are really proud of on our farm is our large, well-stocked shop, full of local fresh produce.
-                    <br><br>Unforunately, we don't do online ordering yet, but we are planning to offer it in the near future!
-                    <br><br><u><a href="shop.html" title="Click to view our shop produce">Click on the link to see a full range of the produce we sell.</a></u>
-                </p>
-            
-                    
-            </div>
-            -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3196.0646421239126!2d-3.6973421945495932!3d55.498240031728244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1698597898747!5m2!1sen!2suk" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
         </div>
         <br><br>
         <div class="footer">
