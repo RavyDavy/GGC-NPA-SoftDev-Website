@@ -29,11 +29,35 @@
                 <a href="faqcontact.html" title="Any FAQs, and our Contact Details">|  FAQs/Contact Us  |</a>
             </div>
         </div>
+        <!-- This next "link" will be a Search Bar, which will use Google as its search engine and only search "our" site.
+                The code/instuctions were found on: https://pagedart.com/blog/how-to-add-a-search-bar-in-html/ for reference in future -->
+        <div class="searchbutton">
+            <form id="form" role="search">
+                <input type="search" id="query" name="q" placeholder="Search Site..." aria-label="Search through site content">
+                <button>Go!</button>
+            </form>
+            <script>
+                const f = document.getElementById('form');
+                const q = document.getElementById('query');
+                const google = 'https://www.google.com/search?q=site%3A+';
+                const site = 'www.ravydavy.co.uk/GGC-NPA-SoftDev-Website/';
+                  
+                function submitted(event) {
+                  event.preventDefault();
+                  const url = google+site + '+' + q.value;
+                  const win = window.open(url, '_blank');
+                  win.focus();
+                }
+                  
+                f.addEventListener('submit', submitted);
+            </script>
+        </div>
+                <!-- End of Search Bar Code -->
         <br><br>
         <div id="contentbackground3">
             <!--  This will contain the 2nd background image, and will house all the content tiles.  -->
 
-            <div id="cafemenu">
+            <div class="smallarticle">
                 <!-- Cafe Menu Info -->
                 <div class="photos">
                     <img src="images/stovies.jpg" alt="Scottish Stovies" height="400" class="roundedimages">
@@ -48,7 +72,7 @@
                     <br><br>Check out the menus on this page, so you know what we offer before your visit.
                 </p>
             </div>
-            <div id="hotfoodmenu">
+            <div class="smallarticle">
                 <!-- Hot Food Menu -->
                 <div class="photos">
                     <img src="images/mac-n-cheese.jpg" alt="Homemade Mac & Cheese" width="400" class="roundedimages">
@@ -69,7 +93,7 @@
                     </ul>                    
                 </p>
             </div>
-            <div id="coldfoodmenu">
+            <div class="smallarticle">
                 <!-- Cold Food Menu -->
                 <div class="photos">
                     <img src="images/sandwich.jpg" alt="Sandwich on a Plate" width="400" class="roundedimages">
@@ -94,7 +118,7 @@
                     </ul>        
                 </p>
             </div>
-            <div id="drinksdesserts">
+            <div class="smallarticle">
                 <!-- Drinks, Desserts & Cakes Menu -->
                 <div class="photos">
                     <img src="images/stickytoffeepudding.jpg" alt="Home-made Sticky Toffee Pudding" width="400" class="roundedimages">
@@ -124,7 +148,7 @@
                     
             </div>
             <!-- These are placeholder sections for any news/old news articles that are relevent with the cafe and/or shop
-            <div>
+            <div class="smallarticle">
                 
                 <div class="photos">
                     <img src="" alt="" width="400" class="roundedimages">
@@ -134,7 +158,7 @@
                     News Placeholder
                 </p>
             </div>
-            <div>
+            <div class="smallarticle">
                 
                 <div class="photos">
                     <img src="" alt="" width="400" class="roundedimages">

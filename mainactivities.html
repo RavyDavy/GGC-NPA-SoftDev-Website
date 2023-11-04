@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Abbington Farm Visitors Centre</title>
+            <link href="css/Main.css" rel="stylesheet" type="text/css">
+            <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+            <meta name="viewport" content="width=device-width,intitial-scale=1.0">
+            <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="header">
+           <div class="welcome">Welcome to Abington Farm Visitor Centre.</div>
+                <div class="socials">Follow us:<br>
+                    <!-- As the farm is made up, these links don't go anywhere on purpose -->
+                    <a href="#"><img src="images/facebook-logo-rounded.jpg" width="30" alt="Our Facebook Page" title="Follow us on Facebook!"></a>
+                    <a href="#"><img src="images/instagram-logo-rounded.jpg" width="30" alt="Our Instagram Page" title="Follow us on Instagram!"></a>
+           </div>
+           <div class="info">
+                Open 7 Days
+                <br>Monday to Saturday - 8am to 5pm
+                <br>Sundays - 9am to 4.30pm
+            </div>
+            <br><br>
+        </div>
+        <div class="navbar">
+            <div class="links"><a href="index.html" title="Back to Home Page">|  Home  |</a>
+                <a href="foodproduce.html" title="Cafe, and Farm Shop">|  Produce  |</a>
+                <a href="mainactivities.html" title="Main and Seasonal Activities">|  Activities  |</a>
+                <a href="faqcontact.html" title="Any FAQs, and our Contact Details">|  FAQs/Contact Us  |</a>
+            </div>
+        </div>
+        <!-- This next "link" will be a Search Bar, which will use Google as its search engine and only search "our" site.
+                The code/instuctions were found on: https://pagedart.com/blog/how-to-add-a-search-bar-in-html/ for reference in future -->
+        <div class="searchbutton">
+            <form id="form" role="search">
+            <input type="search" id="query" name="q" placeholder="Search Site..." aria-label="Search through site content">
+            <button>Go!</button>
+            </form>
+            <script>
+                const f = document.getElementById('form');
+                const q = document.getElementById('query');
+                const google = 'https://www.google.com/search?q=site%3A+';
+                const site = 'www.ravydavy.co.uk/GGC-NPA-SoftDev-Website/';
+                  
+                function submitted(event) {
+                    event.preventDefault();
+                    const url = google+site + '+' + q.value;
+                    const win = window.open(url, '_blank');
+                    win.focus();
+                 }
+                  
+                f.addEventListener('submit', submitted);
+                </script>
+        </div>
+        <!-- End of Search Bar Code -->
+
+
+        <br><br>
+        <div id="contentbackground6">
+            <!--  This will contain the 2nd background image, and will house all the content tiles.  -->
+
+            <div class="bigarticle">
+                <!-- Main Activities Info -->
+                <div class="photos">
+                    <img src="images//Farm-Shop-400.jpg" alt="Our Farm Shop" title="Our Farm Shop" height="300" class="roundedimages">
+                    <img src="images/Coffee.jpg" alt="Speciality Coffees" height="300" title="Speciality Coffees" class="roundedimages">
+                    <img src="images/Cake.jpg" alt="Home Baked Cake" height="300" title="Home Baked Cake" class="roundedimages">
+                </div>
+                <h3>Main Activities</h3>
+                <p>
+                    Main Activity info.
+                    <br><br>
+                </p>
+                <br><br>
+                
+                
+            </div>
+           
+            <div class="smallarticle">
+                <!-- Seasonal Activities Info -->
+                <div class="photos">
+                    <img src="images/sandwich.jpg" alt="Sandwich on a Plate" width="400" class="roundedimages">
+                </div>
+                <h3>Seasonal Activities</h3>
+                <p>
+                    Season Activities Info - link to that page mainly.
+                    <br><br><u><a href="seasonalactivities.html" title="Click to view our Seasonal Activites">Check out our Seasonal Activities here.</a></u>
+                </p>
+            </div>
+            <div class="smallarticle">
+                <!-- Play Park Info -->
+                <div class="photos">
+                    <img src="images/Local-Honey.jpg" alt="Local Honey from our Neighbours" width="400" class="roundedimages">
+                </div>
+                <h3>Play Adventure Park</h3>
+                <p>
+                    Play Adventure Park info.
+                    <br><br>
+                </p>
+            
+                    
+            </div>
+            <div class="smallarticle">
+                <!-- Petting Zoo Info -->
+                <div class="photos">
+                    <img src="" alt="" width="400" class="roundedimages">
+                </div>
+                <h3>Petting Zoo Info</h3>
+                <p>
+                    Petting Zoo Placeholder
+                </p>
+            </div>
+            <div class="smallarticle">
+                <!-- Walks Info-->
+                <div class="photos">
+                    <img src="" alt="" width="400" class="roundedimages">
+                </div>
+                <h3>Forest Trail Walks Info</h3>
+                <p>
+                    Forest Trail Walks Placeholder
+                </p>
+                
+            </div>
+
+        <!-- These are placeholder sections for any news/old news articles that are relevent with the Activities
+            <div class="smallarticle">
+                
+                <div class="photos">
+                    <img src="" alt="" width="400" class="roundedimages">
+                </div>
+                <h3>News Placeholder</h3>
+                <p>
+                    News Placeholder
+                </p>
+            </div>
+            <div class = "smallarticle">
+                
+                <div class="photos">
+                    <img src="" alt="" width="400" class="roundedimages">
+                </div>
+                <h3>News Placeholder</h3>
+                <p>
+                    News Placeholder
+                </p>
+                
+            </div>
+        -->
+        </div>
+        <br><br>
+        <div class="footer">
+            <div>
+                Abbington Farm Visitors Centre
+                <br>Abbington
+                <br>Biggar
+                <br>ML12 6RH
+                <br>Tel: 01864 502 501
+                <br><br>All Contents &copy; Abbington Farm (2020-2023)
+
+            </div>
+        </div>
+    </body>
+</html>

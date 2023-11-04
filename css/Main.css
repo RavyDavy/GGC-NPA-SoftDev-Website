@@ -196,7 +196,7 @@ input {
     
 }
 
-#aboutus {
+.bigarticle {
     width: 90%;
     background-color: #ffffff;
     border:1px solid #000000;
@@ -208,7 +208,7 @@ input {
    
 }
 
-#foodandprod {
+.smallarticle {
     width: 45%;
     background-color: #ffffff;
     border:1px solid #000000;
@@ -219,38 +219,6 @@ input {
     margin: 20px;
 }
 
-#news {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#activities {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#seasactiv {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
 
 /* All of the above code is for the general site layout, and for the index page */
 /* All of the below code is for the food & produce page */
@@ -271,39 +239,6 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#foodandprodinfo {
-        width: 90%;
-        background-color: #ffffff;
-        border:1px solid #000000;
-        border-radius: 100px;
-        font-size: 18px;
-        text-align: left;
-        padding: 50px;
-        margin: 20px;
-}
-
-#cafeinfo {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#farmshopinfo {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
 }
 
 /* All of the above code is for the food & produce page */
@@ -327,49 +262,6 @@ input {
     justify-content: center;
 }
 
-#cafemenu {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#hotfoodmenu {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#coldfoodmenu {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#drinksdesserts {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
 
 #contentbackground4	{
     width: 60%;
@@ -387,50 +279,6 @@ input {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#shopproduceinfo {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#fruitandveg {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#freshproduce {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
-
-#butchery {
-    width: 45%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
 }
 
 /* All of the above code is for the cafe and the shop pages */
@@ -454,24 +302,24 @@ input {
     justify-content: center;
 }
 
-#faqs {
-    width: 90%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
+/* All of the above code is for the faq & contact us page */
+/* All of the below code is for the main and seasonal activities pages */
+
+#contentbackground6	{
+    width: 60%;
+    background-image: url("../images/background-07.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-color: #2E4922;
+    border: 1px solid #000000;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.map {
-    width: 90%;
-    background-color: #ffffff;
-    border:1px solid #000000;
-    border-radius: 100px;
-    font-size: 18px;
-    text-align: left;
-    padding: 50px;
-    margin: 20px;
-}
