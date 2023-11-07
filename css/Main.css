@@ -323,3 +323,22 @@ input {
     justify-content: center;
 }
 
+#contentbackground7	{
+    width: 60%;
+    background-image: url("../images/background-08.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    background-color: #2E4922;
+    border: 1px solid #000000;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
