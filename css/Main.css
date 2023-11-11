@@ -28,6 +28,10 @@ a:hover {
     
 }
 
+li {
+    padding: 10px;
+}
+
 #contentbackground	{
     width: 60%;
     background-image: url("../images/background-02.jpg");
@@ -86,7 +90,7 @@ a:hover {
 }
 
 .logo {
-    width: 200;
+    width: 200px;
 }
 
 .navbar	{
@@ -217,6 +221,10 @@ input {
     text-align: left;
     padding: 50px;
     margin: 20px;
+}
+
+.map {
+    text-align: center;
 }
 
 
